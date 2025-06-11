@@ -1,0 +1,21 @@
+/* Custom CSS for Hazriq's Dev Chaos Blog - More Aggressive Override */
+
+/* Target the entry-content within any post-entry, specifically within the list-posts section */
+/* Added direct targeting of article as well, and made the selector more specific */
+body #main article.post-entry .entry-content,
+body #main article.post-entry .first-entry .entry-content { /* Targeting 'first-entry' as well */
+    max-height: none !important;
+    overflow: visible !important;
+    -webkit-line-clamp: unset !important; /* THE KEY FIX */
+    text-overflow: initial !important;
+    white-space: normal !important;
+    display: block !important; /* Override display: -webkit-box; */
+    -webkit-box-orient: unset !important; /* Override -webkit-box-orient: vertical; */
+}
+
+/* Ensure code blocks themselves also allow full height/scrolling */
+body #main article.post-entry .entry-content pre {
+    max-height: 500px; /* Adjust this value as needed */
+    overflow: auto;    /* Add scrollbars if code block content exceeds max-height */
+    margin-bottom: 1.5em; /* Ensure proper spacing */
+}

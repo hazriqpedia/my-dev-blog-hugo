@@ -1,6 +1,7 @@
 # hazriqpedia.github.io – My Hugo Dev Blog ✍️
 
-This site is powered by [Hugo](https://gohugo.io/) and deployed via GitHub Pages at:  
+This site is powered by [Hugo](https://gohugo.io/) and deployed via GitHub Pages at:
+
 🌐 **https://hazriqpedia.github.io**
 
 ## 🛠️ Requirements
@@ -16,7 +17,7 @@ This site is powered by [Hugo](https://gohugo.io/) and deployed via GitHub Pages
 Start a local server (live reload enabled):
 
 ```bash
-hugo server
+hugo server --buildDrafts
 ```
 
 Then open: [http://localhost:1313](http://localhost:1313)

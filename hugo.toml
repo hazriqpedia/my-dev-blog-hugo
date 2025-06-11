@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = "Hazriq's Dev Chaos"
 theme = "PaperMod"
 
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsClass = "highlight"
+
 [params]
   homeInfoParams = { Title = "👨‍💻 Hazriq’s Dev Blog", Content = "Learning in public. Building and exploring dev projects." }
 

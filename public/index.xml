@@ -6,8 +6,31 @@
     <description>Recent content on Hazriq&#39;s Dev Chaos</description>
     <generator>Hugo -- 0.147.7</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Jun 2025 14:53:16 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Jun 2025 17:13:13 +0800</lastBuildDate>
     <atom:link href="https://hazriqpedia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PY: defaultdict()</title>
+      <link>https://hazriqpedia.github.io/posts/py-defaultdict/</link>
+      <pubDate>Wed, 11 Jun 2025 17:13:13 +0800</pubDate>
+      <guid>https://hazriqpedia.github.io/posts/py-defaultdict/</guid>
+      <description>&lt;p&gt;A &lt;code&gt;defaultdict&lt;/code&gt; is a subclass of dict that calls a factory function to supply missing values for any requested key.&lt;/p&gt;
+&lt;p&gt;&amp;hellip;
+In today&amp;rsquo;s call, I was looking at a simple python solution that will try to count the number of fruits based on types.&lt;/p&gt;
+&lt;p&gt;Lets take this example. I want to know how many numbers apple in the list.&lt;/p&gt;
+&lt;p&gt;The typical way:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fruit_list = [&amp;#34;apple&amp;#34;, &amp;#34;banana&amp;#34;, &amp;#34;apple&amp;#34;, &amp;#34;orange&amp;#34;, &amp;#34;banana&amp;#34;, &amp;#34;apple&amp;#34;]
+fruit_counts = {}
+
+for fruit in fruit_list:
+    if fruit in fruit_counts:
+        fruit_counts[fruit] += 1
+    else:
+        fruit_counts[fruit] = 1
+
+print(fruit_counts)
+# Output: {&amp;#39;apple&amp;#39;: 3, &amp;#39;banana&amp;#39;: 2, &amp;#39;orange&amp;#39;: 1}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We will check the &lt;code&gt;fruit_counts&lt;/code&gt; dict. If it&amp;rsquo;s there, add more. If not, set it it to 1.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>https://hazriqpedia.github.io/about/</link>
