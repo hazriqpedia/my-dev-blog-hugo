@@ -35,3 +35,9 @@ pygmentsClass = "highlight"
     name = "About"
     url = "/about/"
     weight = 2
+
+  [[menu.main]]
+    identifier = "Tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 3

@@ -2,6 +2,7 @@
 date = '2025-06-11T17:13:13+08:00'
 draft = false
 title = 'PY: defaultdict()'
+tags = ["python","py","defaultdict"]
 +++
 
 A `defaultdict` is a subclass of dict that calls a factory function to supply missing values for any requested key.
