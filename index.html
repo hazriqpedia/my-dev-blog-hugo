@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://hazriqpedia.github.io/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.170b97b89ce8a1eca332d5180fdd23dc33dcfb0b92c6a197897bbe0c311687d3.css" integrity="sha256-FwuXuJzooeyjMtUYD90j3DPc&#43;wuSxqGXiXu&#43;DDEWh9M=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://hazriqpedia.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://hazriqpedia.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://hazriqpedia.github.io/favicon-32x32.png">
@@ -169,12 +169,73 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">PY: defaultdict()
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A <code>defaultdict</code> is a subclass of dict that calls a factory function to supply missing values for any requested key.</p>
+<p>&hellip;
+In today&rsquo;s call, I was looking at a simple python solution that will try to count the number of fruits based on types.</p>
+<p>Lets take this example. I want to know how many numbers apple in the list.</p>
+<p>The typical way:</p>
+<pre tabindex="0"><code>fruit_list = [&#34;apple&#34;, &#34;banana&#34;, &#34;apple&#34;, &#34;orange&#34;, &#34;banana&#34;, &#34;apple&#34;]
+fruit_counts = {}
+
+for fruit in fruit_list:
+    if fruit in fruit_counts:
+        fruit_counts[fruit] += 1
+    else:
+        fruit_counts[fruit] = 1
+
+print(fruit_counts)
+# Output: {&#39;apple&#39;: 3, &#39;banana&#39;: 2, &#39;orange&#39;: 1}
+</code></pre><p>We will check the <code>fruit_counts</code> dict. If it&rsquo;s there, add more. If not, set it it to 1.</p>
+<p>Looks simple, but apparently&hellip; There&rsquo;s a way to do this in more pythonic way..</p>
+<pre tabindex="0"><code>from collections import defaultdict
+
+fruit_list = [&#34;apple&#34;, &#34;banana&#34;, &#34;apple&#34;, &#34;orange&#34;, &#34;banana&#34;, &#34;apple&#34;]
+fruit_counts = defaultdict(int) # defaultdict with a default factory of int (which returns 0)
+
+for fruit in fruit_list:
+    fruit_counts[fruit] += 1 # If &#39;fruit&#39; is not in fruit_counts, it defaults to 0, then 1 is added.
+
+print(fruit_counts)
+# Output: defaultdict(&lt;class &#39;int&#39;&gt;, {&#39;apple&#39;: 3, &#39;banana&#39;: 2, &#39;orange&#39;: 1})
+</code></pre><p>If fruit is already a key in fruit_counts, its current value is incremented by 1.
+If fruit is not yet a key in fruit_counts, defaultdict(int) automatically creates fruit_counts[fruit] and initializes its value to 0. Then, 1 is added to it, making its value 1.</p>
+<p>From <a href="https://www.geeksforgeeks.org/defaultdict-in-python/">GeeksforGeeks</a>:</p>
+<ul>
+<li>Using <code>int</code>: If you use int as the factory function, the default value will be 0 (since int() returns 0).</li>
+<li>Using <code>list</code>: If you use list as the factory function, the default value will be an empty list ([]).</li>
+<li>Using <code>str</code>: If you use str, the default value will be an empty string (&rsquo;&rsquo;).</li>
+</ul>
+<p>Now&hellip; What if I want to start from 100? Apparently&hellip; we can! via lambda&hellip;</p>
+<pre tabindex="0"><code>from collections import defaultdict
+
+fruit_list = [&#34;apple&#34;, &#34;banana&#34;, &#34;apple&#34;, &#34;orange&#34;, &#34;banana&#34;, &#34;apple&#34;]
+
+fruit_counts = defaultdict(lambda: 50)
+
+for fruit in fruit_list:
+    # If &#39;fruit&#39; is not in fruit_counts, it defaults to 50, then 1 is added.
+    fruit_counts[fruit] += 1
+
+print(fruit_counts)
+// defaultdict(&lt;function &lt;lambda&gt; at 0x7f73165e7d30&gt;, {&#39;apple&#39;: 53, &#39;banana&#39;: 52, &#39;orange&#39;: 51})
+</code></pre>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-11 17:13:13 +0800 +08'>June 11, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to PY: defaultdict()" href="https://hazriqpedia.github.io/posts/py-defaultdict/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">My First Post
     </h2>
   </header>
   <div class="entry-content">
-    <p>Hellow World!
-</p>
+    <p>Hellow World!</p>
+
   </div>
   <footer class="entry-footer"><span title='2025-06-04 14:38:26 +0800 +08'>June 4, 2025</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to My First Post" href="https://hazriqpedia.github.io/posts/my-first-post/"></a>
