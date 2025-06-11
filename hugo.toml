@@ -1,0 +1,33 @@
+baseURL = 'https://hazriqpedia.github.io/'
+languageCode = 'en-us'
+title = "Hazriq's Dev Chaos"
+theme = "PaperMod"
+
+[params]
+  homeInfoParams = { Title = "👨‍💻 Hazriq’s Dev Blog", Content = "Learning in public. Building and exploring dev projects." }
+
+
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+
+  socialIcons = [
+    { name = "github", url = "https://github.com/hazriqpedia" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/hazriqishak/" },
+  ]
+
+
+[menu]
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
