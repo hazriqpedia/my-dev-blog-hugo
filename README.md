@@ -1,78 +1,108 @@
-# My Hugo Site
+# hazriqpedia.github.io – My Hugo Dev Blog ✍️
 
-This README provides a quick guide to managing content and running your Hugo site locally.
+This site is powered by [Hugo](https://gohugo.io/) and deployed via GitHub Pages at:  
+🌐 **https://hazriqpedia.github.io**
 
-## Getting Started with Hugo
+## 🛠️ Requirements
 
-This site is built using Hugo, a fast and flexible static site generator.
+- [Install Hugo](https://gohugo.io/getting-started/installing/)
+- Git
+- A GitHub repo (like this one)
 
-### Prerequisites
+## 🚀 Quick Commands
 
-Before you begin, ensure you have Hugo installed. You can find installation instructions on the [official Hugo website](https://gohugo.io/getting-started/installing/).
+### ▶️ Run the site locally
 
-### Running the Site Locally
+Start a local server (live reload enabled):
 
-To see your changes in real-time or to preview your site before deployment:
+```bash
+hugo server
+```
 
-1.  Open your terminal or command prompt.
-2.  Navigate to the root directory of your Hugo site (where `config.toml` is located).
-3.  Run the following command:
+Then open: [http://localhost:1313](http://localhost:1313)
 
-    ```bash
-    hugo server
-    ```
+## ✍️ Writing Content
 
-    This will start a local server, usually accessible at `http://localhost:1313`. Hugo will automatically rebuild the site whenever you make changes to your content or templates.
+### ➕ Add a New Post
 
-## Creating Content
+```bash
+hugo new posts/my-new-post.md
+```
 
-Hugo uses a content management system that relies on Markdown files.
+Then:
 
-### Creating a New Post
+- Edit the front matter (`title`, `date`, `draft: true`)
+- Write your content in Markdown
+- Set `draft: false` when you're ready to publish
 
-Posts are typically stored in the `content/posts/` directory.
+### ➕ Add a New Page
 
-1.  To create a new post, use the Hugo command:
+Example:
 
-    ```bash
-    hugo new posts/my-new-post.md
-    ```
+```bash
+hugo new about.md
+```
 
-    This will create a new Markdown file (`my-new-post.md`) in the `content/posts/` directory with some pre-filled front matter.
+or:
 
-2.  Open the newly created file in your text editor.
-3.  Edit the front matter (the section enclosed by `---` at the top of the file) to set the title, date, draft status, and any other relevant metadata.
-4.  Write your post content below the front matter using Markdown syntax.
-5.  If the `draft` status is set to `true`, the post will not be published when you build the site for production. Change it to `false` when you're ready to publish.
+```bash
+hugo new about/_index.md
+```
 
-### Creating a New Page
+Then edit the file under `content/about.md`.
 
-Pages are typically stored in the `content/` directory directly or in their own subdirectories (e.g., `content/about/index.md`).
+## ❌ Remove a Post/Page
 
-1.  To create a new page, for example, an "About" page:
+Delete the file directly:
 
-    ```bash
-    hugo new about.md
-    ```
+```bash
+rm content/posts/my-old-post.md
+```
 
-    Or, for a more structured page:
+## 📦 Static Assets
 
-    ```bash
-    hugo new about/_index.md
-    ```
+- Put files in `static/`
+- Example: `static/images/me.png` → use as `/images/me.png` in Markdown
 
-    The `_index.md` file is used for section pages or single pages that serve as the root of a section.
+## ⚙️ Configuration
 
-2.  Similar to posts, open the generated Markdown file, edit the front matter, and add your content.
+Edit `config.toml` to customize:
 
-### Other Important Considerations
+- Site title/description
+- Menus
+- Theme settings (using PaperMod)
 
-- **Front Matter:** The YAML (or TOML/JSON) block at the beginning of your content files. This is where you define metadata like `title`, `date`, `tags`, `categories`, `draft`, etc. The theme you are using, PaperMod, often has specific front matter options for customizing the appearance and behavior of your content. Refer to the [PaperMod documentation](https://adityatelange.github.io/hugo-PaperMod/posts/papermod-features/#frontmatter-params) for details.
-- **Static Files:** For images, CSS, JavaScript, or other static assets, place them in the `static/` directory. These files will be copied directly to the root of your public site. For example, `static/images/my-image.png` would be accessible at `/images/my-image.png` on your site.
-- **Configuration (`config.toml` or `hugo.toml`):** This is the main configuration file for your Hugo site. Here you can set global site parameters, menu items, enable/disable features, and configure your theme. Review this file to customize your site's behavior.
+## 🚀 Publishing to GitHub Pages
 
-## Credits
+1. Build the site:
 
-This site is powered by [Hugo](https://gohugo.io/).
+```bash
+hugo
+```
 
-The theme used is [PaperMod](https://github.com/adityatelange/hugo-PaperMod) by [adityatelange](https://github.com/adityatelange).
+2. Navigate to `public/`:
+
+```bash
+cd public
+```
+
+3. Commit and push:
+
+```bash
+git add .
+git commit -m "Deploy"
+git push origin gh-pages --force
+```
+
+## (Optional) Setup `gh-pages` with Git Worktree
+
+```bash
+git worktree add -B gh-pages public origin/gh-pages
+```
+
+This makes `public/` track the `gh-pages` branch directly.
+
+## 🙌 Credits
+
+- Generator: [Hugo](https://gohugo.io)
+- Theme: [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
