@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hazriq&#39;s Dev Chaos</title>
-    <link>https://hazriqpedia.github.io/</link>
-    <description>Recent content on Hazriq&#39;s Dev Chaos</description>
+    <title>Defaultdict on Hazriq&#39;s Dev Chaos</title>
+    <link>https://hazriqpedia.github.io/tags/defaultdict/</link>
+    <description>Recent content in Defaultdict on Hazriq&#39;s Dev Chaos</description>
     <generator>Hugo -- 0.147.7</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Jun 2025 17:13:13 +0800</lastBuildDate>
-    <atom:link href="https://hazriqpedia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hazriqpedia.github.io/tags/defaultdict/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PY: defaultdict()</title>
       <link>https://hazriqpedia.github.io/posts/py-defaultdict/</link>
@@ -30,26 +30,6 @@ for fruit in fruit_list:
 print(fruit_counts)
 # Output: {&amp;#39;apple&amp;#39;: 3, &amp;#39;banana&amp;#39;: 2, &amp;#39;orange&amp;#39;: 1}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We will check the &lt;code&gt;fruit_counts&lt;/code&gt; dict. If it&amp;rsquo;s there, add more. If not, set it it to 1.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://hazriqpedia.github.io/about/</link>
-      <pubDate>Wed, 04 Jun 2025 14:53:16 +0800</pubDate>
-      <guid>https://hazriqpedia.github.io/about/</guid>
-      <description>&lt;p&gt;Hi, I&amp;rsquo;m @Hazriq. I&amp;rsquo;m a software developer exploring backend, AI, and open source.&lt;/p&gt;
-&lt;p&gt;I write this blog to share what I&amp;rsquo;m learning, building, and obviously&amp;hellip;. breaking.&lt;/p&gt;
-&lt;p&gt;Feel free to reach out or connect!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hazriqpedia&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/hazriqishak/&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>https://hazriqpedia.github.io/posts/my-first-post/</link>
-      <pubDate>Wed, 04 Jun 2025 14:38:26 +0800</pubDate>
-      <guid>https://hazriqpedia.github.io/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Hellow World!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
