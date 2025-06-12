@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hazriqpedia.github.io/tags/defaultdict/</loc>
+    <loc>http://localhost:1313/tags/defaultdict/</loc>
     <lastmod>2025-06-11T17:13:13+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-06-11T17:13:13+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-06-11T17:13:13+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/tags/py/</loc>
+    <loc>http://localhost:1313/tags/py/</loc>
     <lastmod>2025-06-11T17:13:13+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/posts/py-defaultdict/</loc>
+    <loc>http://localhost:1313/posts/py-defaultdict/</loc>
     <lastmod>2025-06-11T17:13:13+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2025-06-11T17:13:13+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-06-11T17:13:13+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-06-04T14:53:16+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/tags/life/</loc>
+    <loc>http://localhost:1313/tags/life/</loc>
     <lastmod>2025-06-04T14:38:26+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/posts/my-first-post/</loc>
+    <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2025-06-04T14:38:26+08:00</lastmod>
   </url><url>
-    <loc>https://hazriqpedia.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

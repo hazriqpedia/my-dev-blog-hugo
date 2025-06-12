@@ -2,7 +2,7 @@
 date = '2025-06-11T17:13:13+08:00'
 draft = false
 title = 'PY: defaultdict()'
-tags = ["python","py","defaultdict"]
+tags = ["python","PY","defaultdict"]
 +++
 
 A `defaultdict` is a subclass of dict that calls a factory function to supply missing values for any requested key.
@@ -14,7 +14,7 @@ Lets take this example. I want to know how many numbers apple in the list.
 
 The typical way:
 
-```
+```python
 fruit_list = ["apple", "banana", "apple", "orange", "banana", "apple"]
 fruit_counts = {}
 
@@ -32,7 +32,7 @@ We will check the `fruit_counts` dict. If it's there, add more. If not, set it i
 
 Looks simple, but apparently... There's a way to do this in more pythonic way..
 
-```
+```python
 from collections import defaultdict
 
 fruit_list = ["apple", "banana", "apple", "orange", "banana", "apple"]
@@ -56,7 +56,7 @@ From [GeeksforGeeks](https://www.geeksforgeeks.org/defaultdict-in-python/):
 
 Now... What if I want to start from 100? Apparently... we can! via lambda...
 
-```
+```python
 from collections import defaultdict
 
 fruit_list = ["apple", "banana", "apple", "orange", "banana", "apple"]
@@ -68,5 +68,5 @@ for fruit in fruit_list:
     fruit_counts[fruit] += 1
 
 print(fruit_counts)
-// defaultdict(<function <lambda> at 0x7f73165e7d30>, {'apple': 53, 'banana': 52, 'orange': 51})
+# defaultdict(<function <lambda> at 0x7f73165e7d30>, {'apple': 53, 'banana': 52, 'orange': 51})
 ```
