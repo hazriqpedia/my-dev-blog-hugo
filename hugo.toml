@@ -2,6 +2,7 @@ baseURL = 'https://hazriqpedia.github.io/'
 languageCode = 'en-us'
 title = "Hazriq's Dev Chaos"
 theme = "PaperMod"
+env = "production"
 
 [params]
   homeInfoParams = { Title = "👨‍💻 Hazriq’s Dev Blog", Content = "Learning in public. Building and exploring dev projects." }
