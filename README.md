@@ -27,7 +27,7 @@ Then open: [http://localhost:1313](http://localhost:1313)
 ### ➕ Add a New Post
 
 ```bash
-hugo new posts/my-new-post.md
+hugo new posts/title.md
 ```
 
 Then:
