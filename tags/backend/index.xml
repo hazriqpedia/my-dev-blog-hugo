@@ -2,33 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Backend on Hazriq&#39;s Dev Chaos</title>
-    <link>http://localhost:1313/tags/backend/</link>
+    <link>https://hazriqpedia.github.io/tags/backend/</link>
     <description>Recent content in Backend on Hazriq&#39;s Dev Chaos</description>
     <generator>Hugo -- 0.147.7</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Jun 2025 10:01:29 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hazriqpedia.github.io/tags/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JS: Express.js</title>
-      <link>http://localhost:1313/posts/js-express.js/</link>
+      <link>https://hazriqpedia.github.io/posts/js-express.js/</link>
       <pubDate>Mon, 23 Jun 2025 10:01:29 +0800</pubDate>
-      <guid>http://localhost:1313/posts/js-express.js/</guid>
-      <description>&lt;p&gt;&lt;code&gt;Express.js&lt;/code&gt; is a minimalist and flexible &lt;code&gt;Node.js&lt;/code&gt; web application framework that provides a robust set of features for building web and mobile applications and APIs.&lt;/p&gt;
+      <guid>https://hazriqpedia.github.io/posts/js-express.js/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Express.js&lt;/code&gt; is a minimalist and flexible &lt;code&gt;Node.js&lt;/code&gt; web application framework that provides a robust set of features for building web and mobile applications and APIs. If you&amp;rsquo;re looking to build fast, scalable, and efficient server-side applications with JavaScript, Express.js is your go-to choice. Its unopinionated nature gives you immense freedom,
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h3 id=&#34;setting-up&#34;&gt;Setting Up&lt;/h3&gt;
-&lt;p&gt;It&amp;rsquo;s easy to set up Express.js. If you have .js project, simply:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Initializing a Node.js project (npm init).&lt;/li&gt;
-&lt;li&gt;Installing Express.js (npm install express).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;core-concepts&#34;&gt;Core Concepts&lt;/h3&gt;
-&lt;h4 id=&#34;routing&#34;&gt;Routing&lt;/h4&gt;
-&lt;h4 id=&#34;middleware&#34;&gt;Middleware&lt;/h4&gt;
-&lt;h4 id=&#34;handling-request-req-and-response-res&#34;&gt;Handling Request (req) and Response (res)&lt;/h4&gt;
-&lt;h4 id=&#34;error-handling&#34;&gt;Error Handling&lt;/h4&gt;
-&lt;h4 id=&#34;serving-static-files&#34;&gt;Serving Static Files&lt;/h4&gt;
-&lt;h3 id=&#34;typical-project-structure&#34;&gt;Typical Project Structure&lt;/h3&gt;
-&lt;h3 id=&#34;validators&#34;&gt;Validators&lt;/h3&gt;
-&lt;h3&gt;&lt;/h3&gt;</description>
+&lt;p&gt;Getting started with Express.js is straightforward. If you already have a Node.js project, or if you&amp;rsquo;re starting a new one, follow these simple steps:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
