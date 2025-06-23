@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Node.js on Hazriq&#39;s Dev Chaos</title>
+    <link>http://localhost:1313/tags/node.js/</link>
+    <description>Recent content in Node.js on Hazriq&#39;s Dev Chaos</description>
+    <generator>Hugo -- 0.147.7</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Jun 2025 10:01:29 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JS: Node.js</title>
+      <link>http://localhost:1313/posts/js-node.js/</link>
+      <pubDate>Mon, 23 Jun 2025 10:01:29 +0800</pubDate>
+      <guid>http://localhost:1313/posts/js-node.js/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
